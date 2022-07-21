@@ -17,8 +17,23 @@ Voici une équation $ax+by+c$
 <!-- color: white -->
 <!-- Ici les commentaires visibles uniquement du présentateur -->
 
+une image
+
+![width:200px](./assets/img/img1.jpg)
+
+
 ## Titre de la slide 3
+<!-- backgroundColor: grey -->
+une video locales
+<video controls>
+  <source width="200" src="video1.mp4" type="video/mp4">
+     Voici <a href="myVideo.mp4">un lien pour télécharger la vidéo</a>.</p>
+</video>
 
-<!-- _class: lead -->
+Un lien vers [la vidéo locale](assets/vid/video1.mp4)
+Un lien local vers [youtube](https://www.youtube.com/watch?v=-J_xL4IGhJA)
 
-Lore ipsum 23
+
+<p>Un paragraphe</p>
+
+## Titre de la slide 4

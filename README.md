@@ -94,6 +94,21 @@ Pour convertir la présentation markdown en pptx éditable, on peut
 
 - passer [par le format PDF](#au-format-pdf) puis utiliser un outil comme [PDF to Powerpoint Converter](https://pdf.online/pdf-to-powerpoint-converter) ou [Adobe](https://www.adobe.com/acrobat/online/pdf-to-ppt.html)
 
+## Conversion avec inclusion de fichiers multimédias
+
+Il faut forcer le html avec l'option `--html`. Pour des exports PDF ou pptx, il faut également autoriser les fichiers locaux avec l'option `--allow-local-files`. Par exemple,
+
+~~~bash
+marp --theme my-theme.css --pdf --allow-local-files slide-deck.md
+~~~
+
+ou
+
+~~~bash
+marp --theme my-theme.css --pptx --allow-local-files slide-deck.md
+~~~
+
+**On ne peut pas inclure de vidéos dans un fichier PDF et donc dans un fichier pptx avec cette méthode.** Il vaut mieux uploader la vidéo sur une plateforme, par exemple Youtube et mettre un lien vers la vidéo.
 
 ### vers d'autres formats (XML, LaTeX, etc.)
 
@@ -122,6 +137,12 @@ marp --theme my-theme.css --pptx slide-deck.md
 ~~~
 
 Les notes seront bien affichées pour la personne qui fait la présentation
+
+## Points à eclaircir
+
+- la directive _class
+- import video et images
+- gestion des videos et images dans le fichier pptx converti (est ce que la vidéo est présente et en mode lecture)
 
 ## Ressources
 
