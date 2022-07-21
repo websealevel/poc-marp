@@ -75,7 +75,15 @@ marp slide-deck.md
 
 La conversion opère juste une conversion en images au format `.pptx`. Le document peut être ouvert dans powerpoint mais **non éditable**
 
-Pour convertir la présentation markdown en pptx éditable, il faut passer par le format PDF puis utiliser un outil comme [PDF to Powerpoint Converter](https://pdf.online/pdf-to-powerpoint-converter) ou [Adobe](https://www.adobe.com/acrobat/online/pdf-to-ppt.html)
+~~~bash
+marp --pptx slide-deck.md
+~~~
+
+### au format PPTX (powerpoint) **éditable**
+
+Pour convertir la présentation markdown en pptx éditable, on peut 
+
+- passer [par le format PDF](#au-format-pdf) puis utiliser un outil comme [PDF to Powerpoint Converter](https://pdf.online/pdf-to-powerpoint-converter) ou [Adobe](https://www.adobe.com/acrobat/online/pdf-to-ppt.html)
 
 
 ### vers d'autres formats (XML, LaTeX, etc.)
