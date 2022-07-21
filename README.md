@@ -78,6 +78,10 @@ La conversion opère juste une conversion en images au format `.pptx`. Le docume
 Pour convertir la présentation markdown en pptx éditable, il faut passer par le format PDF puis utiliser un outil comme [PDF to Powerpoint Converter](https://pdf.online/pdf-to-powerpoint-converter) ou [Adobe](https://www.adobe.com/acrobat/online/pdf-to-ppt.html)
 
 
+### vers d'autres formats (XML, LaTeX, etc.)
+
+Pour cela on peut passer par [la conversion HTML](#au-format-html) puis utiliser [pandoc](https://pandoc.org/index.html)
+
 ## Ressources
 
 - [Marp écosystème](https://marp.app/)
