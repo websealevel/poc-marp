@@ -54,6 +54,15 @@ sudo apt-get install nodejs npm
 npm install -g @marp-team/marp-cli
 ~~~
 
+## Watch
+
+On peut également observer notre fichier de présentation markdown avec l'option `-w`
+
+~~~bash
+marp -w slide-deck.md
+~~~
+
+Marp convertira uniquement le fichier indiqué lorsqu'il observera des modifications (ici en HTML par défaut). On peut donc ouvrir la présentation HTML générée dans notre navigateur pour avoir une preview optimisée avec un *hot reload*.
 
 ## Conversion
 
@@ -90,9 +99,35 @@ Pour convertir la présentation markdown en pptx éditable, on peut
 
 Pour cela on peut passer par [la conversion HTML](#au-format-html) puis utiliser [pandoc](https://pandoc.org/index.html)
 
+## Création d'un thème
+
+On peut créer un thème dédié au projet directement en CSS `my-theme.css` et l'utiliser avec l'option `-theme`
+
+~~~bash
+marp --theme my-theme.css slide-deck.md
+~~~
+
+## Workflow
+
+Watch les sources markdown avec un thème custom
+
+~~~bash
+marp --theme my-theme.css -w slide-deck.md
+~~~
+
+Exporter vers des images dans un fichier powerpoint
+
+~~~bash
+marp --theme my-theme.css --pptx slide-deck.md
+~~~
+
+Les notes seront bien affichées pour la personne qui fait la présentation
+
 ## Ressources
 
 - [Marp écosystème](https://marp.app/)
+- [Marpit framework](https://marpit.marp.app/), sur quoi est basé marp
+- [Marpit API](https://marpit-api.marp.app/index.html)
 - [Doc officielle Marp CLI](https://github.com/marp-team/marp-cli)
 - [Produire un powerpoint editable dans le workflow de Marp](https://github.com/marp-team/marp/discussions/82), l'export vers pptx de marp ne cree pas une présentation éditable mais une version images. Pour produire un ppt éditable il faut passer par le format pdf avant
 - [Pandoc](https://pandoc.org/index.html), un convertisseur de document universel et éprouvé
