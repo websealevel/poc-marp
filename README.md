@@ -131,5 +131,5 @@ Les notes seront bien affichées pour la personne qui fait la présentation
 - [Doc officielle Marp CLI](https://github.com/marp-team/marp-cli)
 - [Produire un powerpoint editable dans le workflow de Marp](https://github.com/marp-team/marp/discussions/82), l'export vers pptx de marp ne cree pas une présentation éditable mais une version images. Pour produire un ppt éditable il faut passer par le format pdf avant
 - [Pandoc](https://pandoc.org/index.html), un convertisseur de document universel et éprouvé
-- [Convertisseur pdf vers powerpoint](https://pdf.online/pdf-to-powerpoint-converter)
+- [Convertisseur pdf vers powerpoint](https://pdf.online/pdf-to-powerpoint-converter), un outil de conversion en ligne gratuit permettant de convertir un fichier PDF vers un fichier pptx éditable
 
