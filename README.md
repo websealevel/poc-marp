@@ -54,10 +54,35 @@ sudo apt-get install nodejs npm
 npm install -g @marp-team/marp-cli
 ~~~
 
+
+## Conversion
+
+### au format PDF
+
+Utilise Chrome ou Chromium
+
+~~~bash
+marp --pdf slide-deck.md
+~~~
+
+### au format HTML
+
+~~~bash
+marp slide-deck.md
+~~~
+
+### au format PPTX (powerpoint) **lecture seule**
+
+La conversion opère juste une conversion en images au format `.pptx`. Le document peut être ouvert dans powerpoint mais **non éditable**
+
+Pour convertir la présentation markdown en pptx éditable, il faut passer par le format PDF puis utiliser un outil comme [PDF to Powerpoint Converter](https://pdf.online/pdf-to-powerpoint-converter) ou [Adobe](https://www.adobe.com/acrobat/online/pdf-to-ppt.html)
+
+
 ## Ressources
 
 - [Marp écosystème](https://marp.app/)
 - [Doc officielle Marp CLI](https://github.com/marp-team/marp-cli)
 - [Produire un powerpoint editable dans le workflow de Marp](https://github.com/marp-team/marp/discussions/82), l'export vers pptx de marp ne cree pas une présentation éditable mais une version images. Pour produire un ppt éditable il faut passer par le format pdf avant
 - [Pandoc](https://pandoc.org/index.html), un convertisseur de document universel et éprouvé
+- [Convertisseur pdf vers powerpoint](https://pdf.online/pdf-to-powerpoint-converter)
 
