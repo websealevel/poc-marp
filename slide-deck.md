@@ -7,17 +7,24 @@ header: en-tête
 footer: footer
 theme: my-theme
 ---
+
 # Titre principal de la présentation
 
 Voici une équation $ax+by+c$
 
-## Titre de la slide 2
+## Titre de la slide **2**
 
 <!-- backgroundColor: black -->
 <!-- color: white -->
 <!-- Ici les commentaires visibles uniquement du présentateur -->
 
-une image
+une imageazeaze klsqk jsjsjs je suis
+
+sqdlkqdlqsd
+
+>dldld
+
+$ax+b$
 
 ![width:200px](./assets/img/img1.jpg)
 
@@ -37,3 +44,11 @@ Un lien local vers [youtube](https://www.youtube.com/watch?v=-J_xL4IGhJA)
 <p>Un paragraphe</p>
 
 ## Titre de la slide 4
+
+## Titre de la slide 5
+
+Et je commence a ecriresdksdlk
+
+<!-- Mettre les deux images comme ceci ?-->
+![width:200px](./assets/img/img1.jpg)
+![width:200px](./assets/img/img1.jpg)

@@ -54,6 +54,20 @@ sudo apt-get install nodejs npm
 npm install -g @marp-team/marp-cli
 ~~~
 
+## Liste des options
+
+Consulter la liste des options offertes par marp
+
+~~~bash
+marp -h
+~~~
+
+Il est possible de mettre toutes les options dans un fichier de configuration marp.conf, puis de le charger
+
+~~~bash
+marp -c marp.conf slide-deck.md
+~~~
+
 ## Watch
 
 On peut également observer notre fichier de présentation markdown avec l'option `-w`
@@ -137,6 +151,14 @@ marp --theme my-theme.css --pptx slide-deck.md
 ~~~
 
 Les notes seront bien affichées pour la personne qui fait la présentation
+
+## Autoriser le markup HTML
+
+Utiliser l'option `--html`
+
+~~~bash
+marp --html --theme my-theme.css -w slide-deck.md
+~~~
 
 ## Points à eclaircir
 
