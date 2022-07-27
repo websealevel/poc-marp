@@ -62,7 +62,7 @@ Consulter la liste des options offertes par marp
 marp -h
 ~~~
 
-Il est possible de mettre toutes les options dans un fichier de configuration marp.conf, puis de le charger
+Il est possible de mettre toutes les options dans un fichier de configuration `marp.conf`, puis de le charger
 
 ~~~bash
 marp -c marp.conf slide-deck.md
