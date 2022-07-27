@@ -160,6 +160,10 @@ Utiliser l'option `--html`
 marp --html --theme my-theme.css -w slide-deck.md
 ~~~
 
+## Markup et CSS
+
+- 
+
 ## Points à eclaircir
 
 - la directive _class
