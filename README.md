@@ -1,5 +1,28 @@
 # Marp
 
+- [Marp](#marp)
+  - [Instalation du programme en ligne de commande (`marp-cli`)](#instalation-du-programme-en-ligne-de-commande-marp-cli)
+    - [macOS](#macos)
+    - [Windows](#windows)
+    - [Debian/Ubuntu](#debianubuntu)
+      - [Installation via les binaires](#installation-via-les-binaires)
+      - [Installation via `node` et `npm`](#installation-via-node-et-npm)
+  - [Afficher la liste des options](#afficher-la-liste-des-options)
+  - [Watch (*hot reload*)](#watch-hot-reload)
+  - [Conversions](#conversions)
+    - [Au format PDF](#au-format-pdf)
+    - [Au format HTML](#au-format-html)
+    - [Au format PPTX (powerpoint) **lecture seule**](#au-format-pptx-powerpoint-lecture-seule)
+    - [Au format PPTX (powerpoint) **éditable**](#au-format-pptx-powerpoint-éditable)
+  - [Conversion avec inclusion de fichiers multimédias](#conversion-avec-inclusion-de-fichiers-multimédias)
+    - [Vers d'autres formats (XML, LaTeX, etc.)](#vers-dautres-formats-xml-latex-etc)
+  - [Création d'un thème](#création-dun-thème)
+  - [Workflow](#workflow)
+  - [Autoriser le markup HTML dans les slides](#autoriser-le-markup-html-dans-les-slides)
+  - [Points à eclaircir](#points-à-eclaircir)
+  - [Ressources](#ressources)
+
+
 ## Instalation du programme en ligne de commande (`marp-cli`)
 
 Toutes les possibilités d'installation de l'application sont listées [sur le dépôt](https://github.com/marp-team/marp-cli).
@@ -54,7 +77,7 @@ sudo apt-get install nodejs npm
 npm install -g @marp-team/marp-cli
 ~~~
 
-## Liste des options
+## Afficher la liste des options
 
 Consulter la liste des options offertes par marp
 
@@ -68,7 +91,7 @@ Il est possible de mettre toutes les options dans un fichier de configuration `m
 marp -c marp.conf slide-deck.md
 ~~~
 
-## Watch
+## Watch (*hot reload*)
 
 On peut également observer notre fichier de présentation markdown avec l'option `-w`
 
@@ -78,9 +101,9 @@ marp -w slide-deck.md
 
 Marp convertira uniquement le fichier indiqué lorsqu'il observera des modifications (ici en HTML par défaut). On peut donc ouvrir la présentation HTML générée dans notre navigateur pour avoir une preview optimisée avec un *hot reload*.
 
-## Conversion
+## Conversions
 
-### au format PDF
+### Au format PDF
 
 Utilise Chrome ou Chromium
 
@@ -88,13 +111,13 @@ Utilise Chrome ou Chromium
 marp --pdf slide-deck.md
 ~~~
 
-### au format HTML
+### Au format HTML
 
 ~~~bash
 marp slide-deck.md
 ~~~
 
-### au format PPTX (powerpoint) **lecture seule**
+### Au format PPTX (powerpoint) **lecture seule**
 
 La conversion opère juste une conversion en images au format `.pptx`. Le document peut être ouvert dans powerpoint mais **non éditable**
 
@@ -102,11 +125,9 @@ La conversion opère juste une conversion en images au format `.pptx`. Le docume
 marp --pptx slide-deck.md
 ~~~
 
-### au format PPTX (powerpoint) **éditable**
+### Au format PPTX (powerpoint) **éditable**
 
-Pour convertir la présentation markdown en pptx éditable, on peut 
-
-- passer [par le format PDF](#au-format-pdf) puis utiliser un outil comme [PDF to Powerpoint Converter](https://pdf.online/pdf-to-powerpoint-converter) ou [Adobe](https://www.adobe.com/acrobat/online/pdf-to-ppt.html)
+Pour convertir la présentation markdown en pptx éditable, on peut passer [par le format PDF](#au-format-pdf) puis utiliser un outil comme [PDF to Powerpoint Converter](https://pdf.online/pdf-to-powerpoint-converter) ou [Adobe](https://www.adobe.com/acrobat/online/pdf-to-ppt.html)
 
 ## Conversion avec inclusion de fichiers multimédias
 
@@ -124,7 +145,7 @@ marp --theme my-theme.css --pptx --allow-local-files slide-deck.md
 
 **On ne peut pas inclure de vidéos dans un fichier PDF et donc dans un fichier pptx avec cette méthode.** Il vaut mieux uploader la vidéo sur une plateforme, par exemple Youtube et mettre un lien vers la vidéo.
 
-### vers d'autres formats (XML, LaTeX, etc.)
+### Vers d'autres formats (XML, LaTeX, etc.)
 
 Pour cela on peut passer par [la conversion HTML](#au-format-html) puis utiliser [pandoc](https://pandoc.org/index.html)
 
@@ -150,9 +171,9 @@ Exporter vers des images dans un fichier powerpoint
 marp --theme my-theme.css --pptx slide-deck.md
 ~~~
 
-Les notes seront bien affichées pour la personne qui fait la présentation
+Les notes seront affichées pour la personne qui fait la présentation.
 
-## Autoriser le markup HTML
+## Autoriser le markup HTML dans les slides
 
 Utiliser l'option `--html`
 
@@ -160,15 +181,11 @@ Utiliser l'option `--html`
 marp --html --theme my-theme.css -w slide-deck.md
 ~~~
 
-## Markup et CSS
-
-- 
 
 ## Points à eclaircir
 
-- la directive _class
+- La directive `_class`
 - import video et images
-- gestion des videos et images dans le fichier pptx converti (est ce que la vidéo est présente et en mode lecture)
 
 ## Ressources
 
